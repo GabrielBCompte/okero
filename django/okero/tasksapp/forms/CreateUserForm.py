@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django import forms
-from tasksapp.models import CustomUser
+from tasksapp.models import Booper
 
 
 class CreateUserForm(forms.ModelForm):
@@ -9,5 +9,5 @@ class CreateUserForm(forms.ModelForm):
     """
 
     class Meta:
-        model = CustomUser
+        model = Booper
         exclude = ['is_staff', 'is_active', 'date_joined']
